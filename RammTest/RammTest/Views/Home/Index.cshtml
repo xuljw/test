@@ -1,0 +1,22 @@
+﻿<div class="people">
+    <h2>People</h2>
+    <div class="shadowContent">
+        <ul data-bind="foreach: people">
+            <li><a data-bind="text: Name"></a></li>
+        </ul>
+    </div>
+</div>
+<div class="jobs">
+    <div>
+        <h2 style="display:inline-block">Jobs</h2>
+        <button style="margin-left: 12px; vertical-align: text-bottom" data-bind="click: resetDoneJobs">Reset Done Jobs</button>
+    </div>
+    <div class="shadowContent">
+        <ul data-bind="foreach: jobs">
+            <li>
+                <span data-bind="text: Description"></span>
+                <button>Mark as Done</button>
+            </li>
+        </ul>
+    </div>
+</div>
